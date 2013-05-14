@@ -9,12 +9,13 @@
 #import "QuizViewController.h"
 
 @implementation QuizViewController
-//first method that will be called
+//first method that will be called -- comes from Supporting Files/main.m
 -(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 //java equivalent: Object initwithDBName(nibNameOrNil, nibBundleOrNil)
 {
     //call the init in super class
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+
     if(self) {
         //create our arrays
         questions = [[NSMutableArray alloc] init];
@@ -32,7 +33,7 @@
     }
     
     currentQuestionIndex = -1;
-    
+      
     return self;
 }
 
@@ -56,6 +57,7 @@
 
 -(IBAction)showAnswer:(id)sender
 {
+   
     NSString *answer = [answers objectAtIndex:currentQuestionIndex];
     [answerField setText:answer];
     
