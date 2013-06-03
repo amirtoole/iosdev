@@ -22,6 +22,7 @@ int main(int argc, const char * argv[])
         [items addObject:@"three"];
         
         [items insertObject:@"zero" atIndex:0];
+//        [items insertObject:@"last" atIndex:[items count]];
         
         for (int i = 0; i < [items count]; i++) {
             NSLog(@"%@", [items objectAtIndex:i]);

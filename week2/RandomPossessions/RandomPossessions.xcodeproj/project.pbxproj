@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		980CFD4E175D642900E4D343 /* BNRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 980CFD4D175D642800E4D343 /* BNRItem.m */; };
 		982634EE1741CAA800E42DEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 982634ED1741CAA800E42DEF /* Foundation.framework */; };
 		982634F11741CAA800E42DEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 982634F01741CAA800E42DEF /* main.m */; };
 		982634F51741CAA800E42DEF /* RandomPossessions.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 982634F41741CAA800E42DEF /* RandomPossessions.1 */; };
@@ -26,6 +27,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		980CFD4C175D642800E4D343 /* BNRItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRItem.h; sourceTree = "<group>"; };
+		980CFD4D175D642800E4D343 /* BNRItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRItem.m; sourceTree = "<group>"; };
 		982634EA1741CAA800E42DEF /* RandomPossessions */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RandomPossessions; sourceTree = BUILT_PRODUCTS_DIR; };
 		982634ED1741CAA800E42DEF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		982634F01741CAA800E42DEF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -76,6 +79,8 @@
 				982634F01741CAA800E42DEF /* main.m */,
 				982634F41741CAA800E42DEF /* RandomPossessions.1 */,
 				982634F21741CAA800E42DEF /* Supporting Files */,
+				980CFD4C175D642800E4D343 /* BNRItem.h */,
+				980CFD4D175D642800E4D343 /* BNRItem.m */,
 			);
 			path = RandomPossessions;
 			sourceTree = "<group>";
@@ -140,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				982634F11741CAA800E42DEF /* main.m in Sources */,
+				980CFD4E175D642900E4D343 /* BNRItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +248,7 @@
 				982634FA1741CAA800E42DEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
