@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BNRItem.h"
 
 int main(int argc, const char * argv[])
 {
@@ -17,16 +18,30 @@ int main(int argc, const char * argv[])
 //        NSLog(@"Hello, World!");
         NSMutableArray *items = [[NSMutableArray alloc] init];
         
-        [items addObject:@"one"];
-        [items addObject:@"two"];
-        [items addObject:@"three"];
+//        [items addObject:@"one"];
+//        [items addObject:@"two"];
+//        [items addObject:@"three"];
         
-        [items insertObject:@"zero" atIndex:0];
+//        [items insertObject:@"zero" atIndex:0];
 //        [items insertObject:@"last" atIndex:[items count]];
         
-        for (int i = 0; i < [items count]; i++) {
-            NSLog(@"%@", [items objectAtIndex:i]);
-        }
+//        for (int i = 0; i < [items count]; i++) {
+//            NSLog(@"%@", [items objectAtIndex:i]);
+//        }
+        
+//        BNRItem *p = [[BNRItem alloc] init];
+//        
+//        [p setItemName:@"Red Sofa"];
+//        
+//        [p setSerialNumber:@"A1B2C"];
+//        
+//        [p setValueInDollars:100];
+
+        BNRItem *p = [[BNRItem alloc] initWithItemName:@"Red Sofa" valueInDollars:100 serialNumber:@"A1B2C"];
+        
+        //this is commented out b/c we now have [p description] which we can just reference using p
+//        NSLog(@"%@ %@ %@ %d", [p itemName], [p dateCreated], [p serialNumber], [p valueInDollars]);
+        NSLog(@"%@", p);
         
         //destroy w/ garbage collection
         items = nil;
