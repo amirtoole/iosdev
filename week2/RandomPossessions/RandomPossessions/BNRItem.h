@@ -30,4 +30,7 @@
 - (id)initWithItemName:(NSString *)name
         valueInDollars:(int)value
           serialNumber:(NSString *)sNumber;
+
++ (id)randomItem;
+
 @end

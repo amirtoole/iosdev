@@ -25,10 +25,6 @@ int main(int argc, const char * argv[])
 //        [items insertObject:@"zero" atIndex:0];
 //        [items insertObject:@"last" atIndex:[items count]];
         
-//        for (int i = 0; i < [items count]; i++) {
-//            NSLog(@"%@", [items objectAtIndex:i]);
-//        }
-        
 //        BNRItem *p = [[BNRItem alloc] init];
 //        
 //        [p setItemName:@"Red Sofa"];
@@ -37,11 +33,23 @@ int main(int argc, const char * argv[])
 //        
 //        [p setValueInDollars:100];
 
-        BNRItem *p = [[BNRItem alloc] initWithItemName:@"Red Sofa" valueInDollars:100 serialNumber:@"A1B2C"];
+//        BNRItem *p = [[BNRItem alloc] initWithItemName:@"Red Sofa" valueInDollars:100 serialNumber:@"A1B2C"];
+
+        
+        for (int i = 0; i < 10; i++) {
+            BNRItem *p = [BNRItem randomItem];
+            [items addObject:p];
+        }
+        
+        for (int i = 0; i < [items count]; i++) {
+            NSLog(@"%@", [items objectAtIndex:i]);
+        }
+
+        
         
         //this is commented out b/c we now have [p description] which we can just reference using p
 //        NSLog(@"%@ %@ %@ %d", [p itemName], [p dateCreated], [p serialNumber], [p valueInDollars]);
-        NSLog(@"%@", p);
+//        NSLog(@"%@", p);
         
         //destroy w/ garbage collection
         items = nil;
