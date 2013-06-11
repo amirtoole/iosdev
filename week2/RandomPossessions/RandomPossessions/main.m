@@ -36,15 +36,25 @@ int main(int argc, const char * argv[])
 //        BNRItem *p = [[BNRItem alloc] initWithItemName:@"Red Sofa" valueInDollars:100 serialNumber:@"A1B2C"];
 
         
-        for (int i = 0; i < 10; i++) {
-            BNRItem *p = [BNRItem randomItem];
-            [items addObject:p];
-        }
-        
-        for (int i = 0; i < [items count]; i++) {
-            NSLog(@"%@", [items objectAtIndex:i]);
-        }
+//        for (int i = 0; i < 10; i++) {
+//            BNRItem *p = [BNRItem randomItem];
+//            [items addObject:p];
+//        }
+//        
+//        for (int i = 0; i < [items count]; i++) {
+//            NSLog(@"%@", [items objectAtIndex:i]);
+//        }
 
+
+        BNRItem *backpack = [[BNRItem alloc] init];
+        [backpack setItemName:@"Backpack"];
+        [items addObject:backpack];
+        
+        BNRItem *calculator = [[BNRItem alloc] init];
+        [calculator setItemName:@"Calculator"];
+        [items addObject:calculator];
+        
+        [backpack setContainedItem:calculator];
         
         
         //this is commented out b/c we now have [p description] which we can just reference using p
@@ -52,6 +62,9 @@ int main(int argc, const char * argv[])
 //        NSLog(@"%@", p);
         
         //destroy w/ garbage collection
+        
+        NSLog(@"Setting items to nil...");
+        
         items = nil;
         
     }

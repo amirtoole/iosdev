@@ -9,56 +9,16 @@
 #import "BNRItem.h"
 
 @implementation BNRItem
+@synthesize itemName,containedItem,container,serialNumber,valueInDollars,dateCreated;
 
-- (NSString *) itemName
+
+//overriding setContainedItem
+- (void)setContainedItem:(BNRItem *)i
 {
-    //return a pointer to the object this BNRItem calls its itemName
-    return itemName;
+    containedItem = i;
+    [i setContainer:self];
 }
 
-- (void)setItemName:(NSString *)newItemName
-{
-    //change instance var to point to another string
-    //this BNRItem will now call this new string its itemName
-    itemName = newItemName;
-}
-
-- (void)setSerialNumber:(NSString *)str
-{
-    serialNumber = str;
-}
-
-- (NSString *)serialNumber;
-{
-    return serialNumber;
-}
-
-- (void)setValueInDollars:(int)i;
-{
-    valueInDollars = i;
-}
-
-- (int)valueInDollars;
-{
-    return valueInDollars;
-}
-
-- (NSDate *)dateCreated
-{
-    return dateCreated;
-}
-
-- (NSString *) description
-{
-    NSString *descriptionString =
-    [[NSString alloc] initWithFormat:@"%@ (%@): Worth $%d, recorded on %@",
-                            itemName,
-                            serialNumber,
-                            valueInDollars,
-                            dateCreated];
-    
-    return descriptionString;
-}
 
 - (id)initWithItemName:(NSString *)name
         valueInDollars:(int)value
@@ -76,6 +36,13 @@
     return self;
 }
 
+- (void)dealloc
+{
+    NSLog(@"Destroyed: %@", self);
+}
+
+
+//static methods
 + (id)randomItem
 {
     //create an array of three adjectives
@@ -112,8 +79,6 @@
     
     return newItem;
 }
-
-
 
 
 @end
