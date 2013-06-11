@@ -10,7 +10,7 @@
 
 @interface BNRItem : NSObject
 {
-
+    //this is where vars are declared (but we're using @property's instead)
 }
 
 //using @property instead; default to strong

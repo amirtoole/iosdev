@@ -50,9 +50,11 @@ int main(int argc, const char * argv[])
         [backpack setItemName:@"Backpack"];
         [items addObject:backpack];
         
+        
         BNRItem *calculator = [[BNRItem alloc] init];
         [calculator setItemName:@"Calculator"];
         [items addObject:calculator];
+
         
         [backpack setContainedItem:calculator];
         
