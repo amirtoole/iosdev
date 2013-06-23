@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:A1BronzeChallenge.xcodeproj">
+      location = "self:Whereami.xcodeproj">
    </FileRef>
 </Workspace>

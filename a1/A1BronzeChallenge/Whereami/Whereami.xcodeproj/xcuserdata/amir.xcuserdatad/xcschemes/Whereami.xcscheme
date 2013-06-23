@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "293CB73E176E2DD7002BD6D3"
-               BuildableName = "A1BronzeChallenge.app"
-               BlueprintName = "A1BronzeChallenge"
-               ReferencedContainer = "container:A1BronzeChallenge.xcodeproj">
+               BlueprintIdentifier = "BE77EFF613E5D5250001988F"
+               BuildableName = "Whereami.app"
+               BlueprintName = "Whereami"
+               ReferencedContainer = "container:Whereami.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "293CB73E176E2DD7002BD6D3"
-            BuildableName = "A1BronzeChallenge.app"
-            BlueprintName = "A1BronzeChallenge"
-            ReferencedContainer = "container:A1BronzeChallenge.xcodeproj">
+            BlueprintIdentifier = "BE77EFF613E5D5250001988F"
+            BuildableName = "Whereami.app"
+            BlueprintName = "Whereami"
+            ReferencedContainer = "container:Whereami.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -51,10 +51,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "293CB73E176E2DD7002BD6D3"
-            BuildableName = "A1BronzeChallenge.app"
-            BlueprintName = "A1BronzeChallenge"
-            ReferencedContainer = "container:A1BronzeChallenge.xcodeproj">
+            BlueprintIdentifier = "BE77EFF613E5D5250001988F"
+            BuildableName = "Whereami.app"
+            BlueprintName = "Whereami"
+            ReferencedContainer = "container:Whereami.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -69,10 +69,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "293CB73E176E2DD7002BD6D3"
-            BuildableName = "A1BronzeChallenge.app"
-            BlueprintName = "A1BronzeChallenge"
-            ReferencedContainer = "container:A1BronzeChallenge.xcodeproj">
+            BlueprintIdentifier = "BE77EFF613E5D5250001988F"
+            BuildableName = "Whereami.app"
+            BlueprintName = "Whereami"
+            ReferencedContainer = "container:Whereami.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
