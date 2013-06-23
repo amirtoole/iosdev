@@ -16,8 +16,10 @@
 		293CB755176E2DD7002BD6D3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 293CB754176E2DD7002BD6D3 /* Default.png */; };
 		293CB757176E2DD7002BD6D3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 293CB756176E2DD7002BD6D3 /* Default@2x.png */; };
 		293CB759176E2DD7002BD6D3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 293CB758176E2DD7002BD6D3 /* Default-568h@2x.png */; };
-		293CB75C176E2DD7002BD6D3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 293CB75B176E2DD7002BD6D3 /* ViewController.m */; };
-		293CB75F176E2DD7002BD6D3 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 293CB75D176E2DD7002BD6D3 /* ViewController.xib */; };
+		293CB75C176E2DD7002BD6D3 /* A1BronzeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 293CB75B176E2DD7002BD6D3 /* A1BronzeViewController.m */; };
+		293CB75F176E2DD7002BD6D3 /* A1BronzeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 293CB75D176E2DD7002BD6D3 /* A1BronzeViewController.xib */; };
+		293CB766176E2E23002BD6D3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 293CB765176E2E23002BD6D3 /* CoreLocation.framework */; };
+		29F4A6FA1773E4E9005AC133 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29F4A6F91773E4E9005AC133 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,9 +36,13 @@
 		293CB754176E2DD7002BD6D3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		293CB756176E2DD7002BD6D3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		293CB758176E2DD7002BD6D3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		293CB75A176E2DD7002BD6D3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		293CB75B176E2DD7002BD6D3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		293CB75E176E2DD7002BD6D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		293CB75A176E2DD7002BD6D3 /* A1BronzeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = A1BronzeViewController.h; sourceTree = "<group>"; };
+		293CB75B176E2DD7002BD6D3 /* A1BronzeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = A1BronzeViewController.m; sourceTree = "<group>"; };
+		293CB75E176E2DD7002BD6D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/A1BronzeViewController.xib; sourceTree = "<group>"; };
+		293CB765176E2E23002BD6D3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		29F4A6F91773E4E9005AC133 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		29F4A6FB1773E640005AC133 /* BNRMapPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BNRMapPoint.h; path = "../../../../../Downloads/iOS Programming 3e Solutions/05. Whereami/Whereami/Whereami/BNRMapPoint.h"; sourceTree = "<group>"; };
+		29F4A6FC1773E641005AC133 /* BNRMapPoint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BNRMapPoint.m; path = "../../../../../Downloads/iOS Programming 3e Solutions/05. Whereami/Whereami/Whereami/BNRMapPoint.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29F4A6FA1773E4E9005AC133 /* MapKit.framework in Frameworks */,
+				293CB766176E2E23002BD6D3 /* CoreLocation.framework in Frameworks */,
 				293CB743176E2DD7002BD6D3 /* UIKit.framework in Frameworks */,
 				293CB745176E2DD7002BD6D3 /* Foundation.framework in Frameworks */,
 				293CB747176E2DD7002BD6D3 /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +81,8 @@
 		293CB741176E2DD7002BD6D3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				29F4A6F91773E4E9005AC133 /* MapKit.framework */,
+				293CB765176E2E23002BD6D3 /* CoreLocation.framework */,
 				293CB742176E2DD7002BD6D3 /* UIKit.framework */,
 				293CB744176E2DD7002BD6D3 /* Foundation.framework */,
 				293CB746176E2DD7002BD6D3 /* CoreGraphics.framework */,
@@ -83,11 +93,13 @@
 		293CB748176E2DD7002BD6D3 /* A1BronzeChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				29F4A6FB1773E640005AC133 /* BNRMapPoint.h */,
+				29F4A6FC1773E641005AC133 /* BNRMapPoint.m */,
 				293CB751176E2DD7002BD6D3 /* AppDelegate.h */,
 				293CB752176E2DD7002BD6D3 /* AppDelegate.m */,
-				293CB75A176E2DD7002BD6D3 /* ViewController.h */,
-				293CB75B176E2DD7002BD6D3 /* ViewController.m */,
-				293CB75D176E2DD7002BD6D3 /* ViewController.xib */,
+				293CB75A176E2DD7002BD6D3 /* A1BronzeViewController.h */,
+				293CB75B176E2DD7002BD6D3 /* A1BronzeViewController.m */,
+				293CB75D176E2DD7002BD6D3 /* A1BronzeViewController.xib */,
 				293CB749176E2DD7002BD6D3 /* Supporting Files */,
 			);
 			path = A1BronzeChallenge;
@@ -162,7 +174,7 @@
 				293CB755176E2DD7002BD6D3 /* Default.png in Resources */,
 				293CB757176E2DD7002BD6D3 /* Default@2x.png in Resources */,
 				293CB759176E2DD7002BD6D3 /* Default-568h@2x.png in Resources */,
-				293CB75F176E2DD7002BD6D3 /* ViewController.xib in Resources */,
+				293CB75F176E2DD7002BD6D3 /* A1BronzeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +187,7 @@
 			files = (
 				293CB74F176E2DD7002BD6D3 /* main.m in Sources */,
 				293CB753176E2DD7002BD6D3 /* AppDelegate.m in Sources */,
-				293CB75C176E2DD7002BD6D3 /* ViewController.m in Sources */,
+				293CB75C176E2DD7002BD6D3 /* A1BronzeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,12 +202,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		293CB75D176E2DD7002BD6D3 /* ViewController.xib */ = {
+		293CB75D176E2DD7002BD6D3 /* A1BronzeViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				293CB75E176E2DD7002BD6D3 /* en */,
 			);
-			name = ViewController.xib;
+			name = A1BronzeViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -264,6 +276,7 @@
 				GCC_PREFIX_HEADER = "A1BronzeChallenge/A1BronzeChallenge-Prefix.pch";
 				INFOPLIST_FILE = "A1BronzeChallenge/A1BronzeChallenge-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -275,6 +288,7 @@
 				GCC_PREFIX_HEADER = "A1BronzeChallenge/A1BronzeChallenge-Prefix.pch";
 				INFOPLIST_FILE = "A1BronzeChallenge/A1BronzeChallenge-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -298,6 +312,7 @@
 				293CB764176E2DD7002BD6D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
