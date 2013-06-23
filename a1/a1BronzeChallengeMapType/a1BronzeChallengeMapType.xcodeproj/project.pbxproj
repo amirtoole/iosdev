@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29977C3917776211008B371B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29977C3817776211008B371B /* Default-568h@2x.png */; };
 		BE77EFFC13E5D5250001988F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE77EFFB13E5D5250001988F /* UIKit.framework */; };
 		BE77EFFE13E5D5250001988F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE77EFFD13E5D5250001988F /* Foundation.framework */; };
 		BE77F00613E5D5250001988F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE77F00413E5D5250001988F /* InfoPlist.strings */; };
@@ -21,13 +22,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BE77EFF713E5D5250001988F /* Whereami.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Whereami.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		29977C3817776211008B371B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		BE77EFF713E5D5250001988F /* a1BronzeChallengeMapType.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = a1BronzeChallengeMapType.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE77EFFB13E5D5250001988F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BE77EFFD13E5D5250001988F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		BE77F00313E5D5250001988F /* Whereami-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Whereami-Info.plist"; sourceTree = "<group>"; };
+		BE77F00313E5D5250001988F /* a1BronzeChallengeMapType-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "a1BronzeChallengeMapType-Info.plist"; sourceTree = "<group>"; };
 		BE77F00513E5D5250001988F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BE77F00713E5D5250001988F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		BE77F00913E5D5250001988F /* Whereami-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Whereami-Prefix.pch"; sourceTree = "<group>"; };
+		BE77F00913E5D5250001988F /* a1BronzeChallengeMapType-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "a1BronzeChallengeMapType-Prefix.pch"; sourceTree = "<group>"; };
 		BE77F00A13E5D5250001988F /* WhereamiAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhereamiAppDelegate.h; sourceTree = "<group>"; };
 		BE77F00B13E5D5250001988F /* WhereamiAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhereamiAppDelegate.m; sourceTree = "<group>"; };
 		BE77F00D13E5D5250001988F /* WhereamiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhereamiViewController.h; sourceTree = "<group>"; };
@@ -35,7 +37,7 @@
 		BE77F01113E5D5250001988F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WhereamiViewController.xib; sourceTree = "<group>"; };
 		BE77F02313E5DDC30001988F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		BE77F02513E5DDDE0001988F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		BED1F46113F053C500337485 /* BNRMapPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; path = BNRMapPoint.h; sourceTree = "<group>"; };
+		BED1F46113F053C500337485 /* BNRMapPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRMapPoint.h; sourceTree = "<group>"; };
 		BED1F46213F053C500337485 /* BNRMapPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRMapPoint.m; sourceTree = "<group>"; };
 		BED6D10613EA5AD7004F4998 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -59,8 +61,9 @@
 		BE77EFEC13E5D5250001988F = {
 			isa = PBXGroup;
 			children = (
+				29977C3817776211008B371B /* Default-568h@2x.png */,
 				BED6D10613EA5AD7004F4998 /* MapKit.framework */,
-				BE77F00113E5D5250001988F /* Whereami */,
+				BE77F00113E5D5250001988F /* a1BronzeChallengeMapType */,
 				BE77EFFA13E5D5250001988F /* Frameworks */,
 				BE77EFF813E5D5250001988F /* Products */,
 			);
@@ -69,7 +72,7 @@
 		BE77EFF813E5D5250001988F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BE77EFF713E5D5250001988F /* Whereami.app */,
+				BE77EFF713E5D5250001988F /* a1BronzeChallengeMapType.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,7 +88,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BE77F00113E5D5250001988F /* Whereami */ = {
+		BE77F00113E5D5250001988F /* a1BronzeChallengeMapType */ = {
 			isa = PBXGroup;
 			children = (
 				BED1F46113F053C500337485 /* BNRMapPoint.h */,
@@ -97,16 +100,17 @@
 				BE77F01013E5D5250001988F /* WhereamiViewController.xib */,
 				BE77F00213E5D5250001988F /* Supporting Files */,
 			);
+			name = a1BronzeChallengeMapType;
 			path = Whereami;
 			sourceTree = "<group>";
 		};
 		BE77F00213E5D5250001988F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				BE77F00313E5D5250001988F /* Whereami-Info.plist */,
+				BE77F00313E5D5250001988F /* a1BronzeChallengeMapType-Info.plist */,
 				BE77F00413E5D5250001988F /* InfoPlist.strings */,
 				BE77F00713E5D5250001988F /* main.m */,
-				BE77F00913E5D5250001988F /* Whereami-Prefix.pch */,
+				BE77F00913E5D5250001988F /* a1BronzeChallengeMapType-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -114,9 +118,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BE77EFF613E5D5250001988F /* Whereami */ = {
+		BE77EFF613E5D5250001988F /* a1BronzeChallengeMapType */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BE77F01513E5D5250001988F /* Build configuration list for PBXNativeTarget "Whereami" */;
+			buildConfigurationList = BE77F01513E5D5250001988F /* Build configuration list for PBXNativeTarget "a1BronzeChallengeMapType" */;
 			buildPhases = (
 				BE77EFF313E5D5250001988F /* Sources */,
 				BE77EFF413E5D5250001988F /* Frameworks */,
@@ -126,9 +130,9 @@
 			);
 			dependencies = (
 			);
-			name = Whereami;
+			name = a1BronzeChallengeMapType;
 			productName = Whereami;
-			productReference = BE77EFF713E5D5250001988F /* Whereami.app */;
+			productReference = BE77EFF713E5D5250001988F /* a1BronzeChallengeMapType.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -136,7 +140,7 @@
 /* Begin PBXProject section */
 		BE77EFEE13E5D5250001988F /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = BE77EFF113E5D5250001988F /* Build configuration list for PBXProject "Whereami" */;
+			buildConfigurationList = BE77EFF113E5D5250001988F /* Build configuration list for PBXProject "a1BronzeChallengeMapType" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -148,7 +152,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BE77EFF613E5D5250001988F /* Whereami */,
+				BE77EFF613E5D5250001988F /* a1BronzeChallengeMapType */,
 			);
 		};
 /* End PBXProject section */
@@ -160,6 +164,7 @@
 			files = (
 				BE77F00613E5D5250001988F /* InfoPlist.strings in Resources */,
 				BE77F01213E5D5250001988F /* WhereamiViewController.xib in Resources */,
+				29977C3917776211008B371B /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,9 +253,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Whereami/Whereami-Prefix.pch";
-				INFOPLIST_FILE = "Whereami/Whereami-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Whereami/a1BronzeChallengeMapType-Prefix.pch";
+				INFOPLIST_FILE = "Whereami/a1BronzeChallengeMapType-Info.plist";
+				PRODUCT_NAME = a1BronzeChallengeMapType;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -259,9 +264,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Whereami/Whereami-Prefix.pch";
-				INFOPLIST_FILE = "Whereami/Whereami-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Whereami/a1BronzeChallengeMapType-Prefix.pch";
+				INFOPLIST_FILE = "Whereami/a1BronzeChallengeMapType-Info.plist";
+				PRODUCT_NAME = a1BronzeChallengeMapType;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -269,7 +274,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BE77EFF113E5D5250001988F /* Build configuration list for PBXProject "Whereami" */ = {
+		BE77EFF113E5D5250001988F /* Build configuration list for PBXProject "a1BronzeChallengeMapType" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BE77F01313E5D5250001988F /* Debug */,
@@ -278,7 +283,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BE77F01513E5D5250001988F /* Build configuration list for PBXNativeTarget "Whereami" */ = {
+		BE77F01513E5D5250001988F /* Build configuration list for PBXNativeTarget "a1BronzeChallengeMapType" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BE77F01613E5D5250001988F /* Debug */,

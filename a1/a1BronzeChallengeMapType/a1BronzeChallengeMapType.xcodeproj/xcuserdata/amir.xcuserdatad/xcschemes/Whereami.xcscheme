@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BE77EFF613E5D5250001988F"
                BuildableName = "Whereami.app"
-               BlueprintName = "Whereami"
-               ReferencedContainer = "container:Whereami.xcodeproj">
+               BlueprintName = "a1BronzeChallengeMapType"
+               ReferencedContainer = "container:a1BronzeChallengeMapType.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BE77EFF613E5D5250001988F"
             BuildableName = "Whereami.app"
-            BlueprintName = "Whereami"
-            ReferencedContainer = "container:Whereami.xcodeproj">
+            BlueprintName = "a1BronzeChallengeMapType"
+            ReferencedContainer = "container:a1BronzeChallengeMapType.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -53,8 +53,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BE77EFF613E5D5250001988F"
             BuildableName = "Whereami.app"
-            BlueprintName = "Whereami"
-            ReferencedContainer = "container:Whereami.xcodeproj">
+            BlueprintName = "a1BronzeChallengeMapType"
+            ReferencedContainer = "container:a1BronzeChallengeMapType.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -71,8 +71,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BE77EFF613E5D5250001988F"
             BuildableName = "Whereami.app"
-            BlueprintName = "Whereami"
-            ReferencedContainer = "container:Whereami.xcodeproj">
+            BlueprintName = "a1BronzeChallengeMapType"
+            ReferencedContainer = "container:a1BronzeChallengeMapType.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
