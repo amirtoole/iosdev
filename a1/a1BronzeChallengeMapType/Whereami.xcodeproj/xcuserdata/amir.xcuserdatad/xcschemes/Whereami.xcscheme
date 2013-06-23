@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BE77EFF613E5D5250001988F"
-               BuildableName = "a1BronzeChallengeMapType.app"
-               BlueprintName = "a1BronzeChallengeMapType"
-               ReferencedContainer = "container:a1BronzeChallengeMapType.xcodeproj">
+               BuildableName = "Whereami.app"
+               BlueprintName = "Whereami"
+               ReferencedContainer = "container:Whereami.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BE77EFF613E5D5250001988F"
-            BuildableName = "a1BronzeChallengeMapType.app"
-            BlueprintName = "a1BronzeChallengeMapType"
-            ReferencedContainer = "container:a1BronzeChallengeMapType.xcodeproj">
+            BuildableName = "Whereami.app"
+            BlueprintName = "Whereami"
+            ReferencedContainer = "container:Whereami.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -52,9 +52,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BE77EFF613E5D5250001988F"
-            BuildableName = "a1BronzeChallengeMapType.app"
-            BlueprintName = "a1BronzeChallengeMapType"
-            ReferencedContainer = "container:a1BronzeChallengeMapType.xcodeproj">
+            BuildableName = "Whereami.app"
+            BlueprintName = "Whereami"
+            ReferencedContainer = "container:Whereami.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -70,9 +70,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BE77EFF613E5D5250001988F"
-            BuildableName = "a1BronzeChallengeMapType.app"
-            BlueprintName = "a1BronzeChallengeMapType"
-            ReferencedContainer = "container:a1BronzeChallengeMapType.xcodeproj">
+            BuildableName = "Whereami.app"
+            BlueprintName = "Whereami"
+            ReferencedContainer = "container:Whereami.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
