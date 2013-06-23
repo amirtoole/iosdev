@@ -23,7 +23,10 @@
 }
 - (void)viewDidLoad
 {
-    [worldView setShowsUserLocation:YES];    
+    [worldView setShowsUserLocation:YES];
+
+    //A1 Bronze Challenge code
+    [worldView setMapType:MKMapTypeSatellite];
 }
 - (BOOL)textFieldShouldReturn:(UITextField *)tf
 {
