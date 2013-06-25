@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		981C175E177904C1004017F2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 981C175D177904C1004017F2 /* MapKit.framework */; };
+		981C176117791484004017F2 /* BNRMapPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 981C176017791484004017F2 /* BNRMapPoint.m */; };
 		BE77EFFC13E5D5250001988F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE77EFFB13E5D5250001988F /* UIKit.framework */; };
 		BE77EFFE13E5D5250001988F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE77EFFD13E5D5250001988F /* Foundation.framework */; };
 		BE77F00613E5D5250001988F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE77F00413E5D5250001988F /* InfoPlist.strings */; };
@@ -21,6 +22,8 @@
 
 /* Begin PBXFileReference section */
 		981C175D177904C1004017F2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		981C175F17791484004017F2 /* BNRMapPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRMapPoint.h; sourceTree = "<group>"; };
+		981C176017791484004017F2 /* BNRMapPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRMapPoint.m; sourceTree = "<group>"; };
 		BE77EFF713E5D5250001988F /* Whereami.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Whereami.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE77EFFB13E5D5250001988F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BE77EFFD13E5D5250001988F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -91,6 +94,8 @@
 				BE77F00E13E5D5250001988F /* WhereamiViewController.m */,
 				BE77F01013E5D5250001988F /* WhereamiViewController.xib */,
 				BE77F00213E5D5250001988F /* Supporting Files */,
+				981C175F17791484004017F2 /* BNRMapPoint.h */,
+				981C176017791484004017F2 /* BNRMapPoint.m */,
 			);
 			path = Whereami;
 			sourceTree = "<group>";
@@ -168,6 +173,7 @@
 				BE77F00813E5D5250001988F /* main.m in Sources */,
 				BE77F00C13E5D5250001988F /* WhereamiAppDelegate.m in Sources */,
 				BE77F00F13E5D5250001988F /* WhereamiViewController.m in Sources */,
+				981C176117791484004017F2 /* BNRMapPoint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
