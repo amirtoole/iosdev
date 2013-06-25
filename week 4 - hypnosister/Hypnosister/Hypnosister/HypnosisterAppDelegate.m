@@ -19,10 +19,18 @@
     CGRect viewFrame = CGRectMake(160, 240, 100, 150);
     
     HypnosisView *view = [[HypnosisView alloc] initWithFrame:viewFrame];
-    [view setBackgroundColor:[UIColor redColor]];
+//    [view setBackgroundColor:[UIColor redColor]];
     
     //draw the view
     [[self window] addSubview:view];
+    
+    CGRect anotherFrame = CGRectMake(20, 30, 50, 50);
+    HypnosisView *anotherView = [[HypnosisView alloc] initWithFrame:anotherFrame];
+//    [anotherView setBackgroundColor:[UIColor blueColor]];
+    
+//    [[self window] addSubview:anotherView];
+    //^ instead of applying to self.window, we're adding a subView to view; blue square will be in red rectangle
+    [view addSubview:anotherView];
     
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
