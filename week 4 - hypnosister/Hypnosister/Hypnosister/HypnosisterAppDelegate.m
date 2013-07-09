@@ -16,21 +16,50 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     //making a rectangle: x, y, width, height
-    CGRect viewFrame = CGRectMake(160, 240, 100, 150);
+//    CGRect viewFrame = CGRectMake(160, 240, 100, 150);
     
-    HypnosisView *view = [[HypnosisView alloc] initWithFrame:viewFrame];
+//    HypnosisView *view = [[HypnosisView alloc] initWithFrame:viewFrame];
 //    [view setBackgroundColor:[UIColor redColor]];
     
-    //draw the view
-    [[self window] addSubview:view];
+    CGRect screenRect = [[self window] bounds];
     
-    CGRect anotherFrame = CGRectMake(20, 30, 50, 50);
-    HypnosisView *anotherView = [[HypnosisView alloc] initWithFrame:anotherFrame];
+    //create the UIScrollView to have the size of the window, matching its size
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:screenRect];
+    [[self window] addSubview:scrollView];
+    
+    //Crearte the hypnosisview with a frame that is twice the size of the screen
+    CGRect bigRect = screenRect;
+    bigRect.size.width *= 2.0;
+    bigRect.size.height *= 2.0;
+    HypnosisView *view = [[HypnosisView alloc] initWithFrame:bigRect];
+    
+    
+    //add the hypnosisview as a subview of the scrollview instead of the window
+    [scrollView addSubview:view];
+    
+    //tell the srollview how big its virtual world is
+    [scrollView setContentSize:bigRect.size];
+    
+//    HypnosisView *view = [[HypnosisView alloc] initWithFrame:[[self window] bounds]];
+    
+    //draw the view
+//    [[self window] addSubview:view];
+    
+    BOOL success = [view becomeFirstResponder];
+    if (success) {
+        NSLog(@"HypnosisView became the first responder");
+    }
+    else {
+        NSLog(@"Could not become first responder");
+    }
+    
+//    CGRect anotherFrame = CGRectMake(20, 30, 50, 50);
+//    HypnosisView *anotherView = [[HypnosisView alloc] initWithFrame:anotherFrame];
 //    [anotherView setBackgroundColor:[UIColor blueColor]];
     
 //    [[self window] addSubview:anotherView];
     //^ instead of applying to self.window, we're adding a subView to view; blue square will be in red rectangle
-    [view addSubview:anotherView];
+//    [view addSubview:anotherView];
     
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
