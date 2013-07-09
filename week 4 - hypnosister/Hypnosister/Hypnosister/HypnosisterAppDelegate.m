@@ -15,6 +15,8 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
+    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
+    
     //making a rectangle: x, y, width, height
 //    CGRect viewFrame = CGRectMake(160, 240, 100, 150);
     
@@ -25,17 +27,31 @@
     
     //create the UIScrollView to have the size of the window, matching its size
     UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:screenRect];
+//    [scrollView setPagingEnabled:YES];
+    
+    [scrollView setMinimumZoomScale:1.0];
+    [scrollView setMaximumZoomScale:5.0];
+    
+    //you will get a warning here, ignore it for now
+    [scrollView setDelegate:self];
+    
     [[self window] addSubview:scrollView];
     
     //Crearte the hypnosisview with a frame that is twice the size of the screen
     CGRect bigRect = screenRect;
-    bigRect.size.width *= 2.0;
-    bigRect.size.height *= 2.0;
-    HypnosisView *view = [[HypnosisView alloc] initWithFrame:bigRect];
+//    bigRect.size.width *= 2.0;
+//    bigRect.size.height *= 2.0;
+//    HypnosisView *view = [[HypnosisView alloc] initWithFrame:bigRect];
+//    HypnosisView *view = [[HypnosisView alloc] initWithFrame:screenRect];
     
-    
+    view = [[HypnosisView alloc] initWithFrame:screenRect];
     //add the hypnosisview as a subview of the scrollview instead of the window
     [scrollView addSubview:view];
+    
+    //Move the rectangle for the other HypnosisView to the right, just off the screen
+    screenRect.origin.x = screenRect.size.width;
+//    HypnosisView *anotherView = [[HypnosisView alloc] initWithFrame:screenRect];
+//    [scrollView addSubview:anotherView];
     
     //tell the srollview how big its virtual world is
     [scrollView setContentSize:bigRect.size];
@@ -65,6 +81,11 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
+{
+    return view;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
