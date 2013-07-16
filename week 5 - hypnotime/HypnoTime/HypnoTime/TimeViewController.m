@@ -18,7 +18,12 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        UITabBarItem *tbi = [self tabBarItem];
+        
+        [tbi setTitle:@"Time"];
+        
+        UIImage *i = [UIImage imageNamed:@"Time.png"];
+        [tbi setImage:i];
     }
     return self;
 }
