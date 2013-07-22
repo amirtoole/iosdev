@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		984AAFAE179DED0C0003AB49 /* BNRItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 984AAFAD179DED0C0003AB49 /* BNRItemStore.m */; };
 		98F386301794D8F900690FCB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98F3862F1794D8F900690FCB /* UIKit.framework */; };
 		98F386321794D8F900690FCB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98F386311794D8F900690FCB /* Foundation.framework */; };
 		98F386341794D8F900690FCB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98F386331794D8F900690FCB /* CoreGraphics.framework */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		984AAFAC179DED0C0003AB49 /* BNRItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRItemStore.h; sourceTree = "<group>"; };
+		984AAFAD179DED0C0003AB49 /* BNRItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRItemStore.m; sourceTree = "<group>"; };
 		98F3862C1794D8F900690FCB /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98F3862F1794D8F900690FCB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		98F386311794D8F900690FCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -90,6 +93,8 @@
 				98F3863F1794D8F900690FCB /* HomepwnerAppDelegate.m */,
 				98F3864C1794DA1300690FCB /* ItemsViewController.h */,
 				98F3864D1794DA1300690FCB /* ItemsViewController.m */,
+				984AAFAC179DED0C0003AB49 /* BNRItemStore.h */,
+				984AAFAD179DED0C0003AB49 /* BNRItemStore.m */,
 				98F386361794D8F900690FCB /* Supporting Files */,
 			);
 			path = Homepwner;
@@ -179,6 +184,7 @@
 				98F386401794D8F900690FCB /* HomepwnerAppDelegate.m in Sources */,
 				98F3864E1794DA1300690FCB /* ItemsViewController.m in Sources */,
 				98F386511794DC3B00690FCB /* BNRItem.m in Sources */,
+				984AAFAE179DED0C0003AB49 /* BNRItemStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +299,7 @@
 				98F3864B1794D8F900690FCB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
