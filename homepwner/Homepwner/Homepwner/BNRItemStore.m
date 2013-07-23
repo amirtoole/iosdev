@@ -53,4 +53,17 @@
 {
     [allItems removeObjectIdenticalTo:p];
 }
+
+- (void)moveItemAtIndex:(int)from toIndex:(int)to
+{
+    if (from == to) {
+        return;
+    }
+
+    BNRItem *p = [allItems objectAtIndex:from];
+    [allItems removeObjectAtIndex:from];
+    
+    //insert p in the array at new location
+    [allItems insertObject:p atIndex:to];
+}
 @end
