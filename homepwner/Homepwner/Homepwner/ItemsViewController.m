@@ -17,9 +17,9 @@
     //call the super class's designated init
     self = [super initWithStyle:UITableViewStyleGrouped];
     if (self) {
-        for (int i = 0; i < 500; i++) {
-            [[BNRItemStore sharedStore] createItem];
-        }
+//        for (int i = 0; i < 5; i++) {
+//            [[BNRItemStore sharedStore] createItem];
+//        }
     }
     return self;
 }
@@ -78,14 +78,51 @@
     return headerView;
 }
 
-- (void)addNewItem:(id)sender
+- (IBAction)addNewItem:(id)sender
 {
-        
+    //create a new BNRItem and add it to the store
+    BNRItem *newItem = [[BNRItemStore sharedStore] createItem];
+    
+    //figure out where that item is in the array
+    int lastRow = [[[BNRItemStore sharedStore] allItems] indexOfObject:newItem];
+    
+    NSIndexPath *ip = [NSIndexPath indexPathForItem:lastRow inSection:0];
+    
+    //insert this new row into the table
+    [[self tableView] insertRowsAtIndexPaths:[NSArray arrayWithObject:ip]
+                            withRowAnimation:UITableViewRowAnimationTop];
 }
 
-- (void)toggleEditingMode:(id)sender
+- (IBAction)toggleEditingMode:(id)sender
 {
-    
+    //if we are currently in editing mode
+    if ([self isEditing]) {
+        //change text of button to inform user of state
+        [sender setTitle:@"Edit" forState:UIControlStateNormal];
+        //turn off editing mode
+        [self setEditing:NO animated:YES];
+    }
+    else {
+        //change text of button to inform user of state
+        [sender setTitle:@"Done" forState:UIControlStateNormal];
+        //enter editing mode
+        [self setEditing:YES animated:YES];
+    }
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    //if the table view is asking to commit a delete command...
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        BNRItemStore *ps = [BNRItemStore sharedStore];
+        NSArray *items = [ps allItems];
+        BNRItem *p = [items objectAtIndex:[indexPath row]];
+        [ps removeItem:p];
+        
+        //we also remove that row from the table view with an animation
+        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath]
+                         withRowAnimation:UITableViewRowAnimationFade];
+    }
 }
 
 @end
