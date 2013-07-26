@@ -67,27 +67,27 @@
     return cell;
 }
 
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
-{
-    return [self headerView];
-}
+//- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+//{
+//    return [self headerView];
+//}
 
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
-{
-    //the height of the header should be determined from the height of the view in the xib
-    return [[self headerView] bounds].size.height;
-}
+//- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+//{
+//    //the height of the header should be determined from the height of the view in the xib
+//    return [[self headerView] bounds].size.height;
+//}
 
-- (UIView *)headerView
-{
-    //if we haven't loaded the headerView yet ...
-    if (!headerView) {
-        //load the HeaderView.xib
-        [[NSBundle mainBundle] loadNibNamed:@"HeaderView" owner:self options:nil];
-    }
-    
-    return headerView;
-}
+//- (UIView *)headerView
+//{
+//    //if we haven't loaded the headerView yet ...
+//    if (!headerView) {
+//        //load the HeaderView.xib
+//        [[NSBundle mainBundle] loadNibNamed:@"HeaderView" owner:self options:nil];
+//    }
+//    
+//    return headerView;
+//}
 
 - (IBAction)addNewItem:(id)sender
 {
@@ -104,22 +104,22 @@
                             withRowAnimation:UITableViewRowAnimationTop];
 }
 
-- (IBAction)toggleEditingMode:(id)sender
-{
-    //if we are currently in editing mode
-    if ([self isEditing]) {
-        //change text of button to inform user of state
-        [sender setTitle:@"Edit" forState:UIControlStateNormal];
-        //turn off editing mode
-        [self setEditing:NO animated:YES];
-    }
-    else {
-        //change text of button to inform user of state
-        [sender setTitle:@"Done" forState:UIControlStateNormal];
-        //enter editing mode
-        [self setEditing:YES animated:YES];
-    }
-}
+//- (IBAction)toggleEditingMode:(id)sender
+//{
+//    //if we are currently in editing mode
+//    if ([self isEditing]) {
+//        //change text of button to inform user of state
+//        [sender setTitle:@"Edit" forState:UIControlStateNormal];
+//        //turn off editing mode
+//        [self setEditing:NO animated:YES];
+//    }
+//    else {
+//        //change text of button to inform user of state
+//        [sender setTitle:@"Done" forState:UIControlStateNormal];
+//        //enter editing mode
+//        [self setEditing:YES animated:YES];
+//    }
+//}
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
