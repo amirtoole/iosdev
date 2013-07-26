@@ -13,13 +13,24 @@
 @implementation ItemsViewController
 
 - (id)init
-        {
+{
     //call the super class's designated init
     self = [super initWithStyle:UITableViewStyleGrouped];
     if (self) {
-//        for (int i = 0; i < 5; i++) {
-//            [[BNRItemStore sharedStore] createItem];
-//        }
+        UINavigationItem *n = [self navigationItem];
+
+        [n setTitle:@"Homepwner"];
+        
+        //create a new bar button item that will send addNewItem: to ItemsViewController
+        UIBarButtonItem *bbi = [[UIBarButtonItem alloc]
+                                initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
+                                target:self
+                                action:@selector(addNewItem:)];
+        
+        //set this bar button item as the right item in the navigationItem
+        [[self navigationItem] setRightBarButtonItem:bbi];
+        
+        [[self navigationItem] setLeftBarButtonItem:[self editButtonItem]];
     }
     return self;
 }
@@ -132,8 +143,22 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     DetailViewController *detailViewController = [[DetailViewController alloc] init];
+
+    NSArray *items = [[BNRItemStore sharedStore] allItems];
+    BNRItem *selectedItem = [items objectAtIndex:[indexPath row]];
+    
+    //give detail view controller a pointer to the item object in row
+    [detailViewController setItem:selectedItem];
+    
     //push to top of navigation controller's stack
     [[self navigationController] pushViewController:detailViewController animated:YES];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+
+    [[self tableView] reloadData];
 }
 
 @end
