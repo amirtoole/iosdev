@@ -35,6 +35,20 @@
     
     //Use filtered NSDate object to set dateLabel contents
     [dateLabel setText:[dateFormatter stringFromDate:[item dateCreated]]];
+    
+    //set the image
+    NSString *imageKey = [item imageKey];
+    if (imageKey) {
+        //get the image for key from image store
+        UIImage *imageToDisplay = [[BNRImageStore sharedStore] imageForKey:imageKey];
+        
+        //use the image to put on the screen in imageView
+        [imageView setImage:imageToDisplay];
+    }
+    else {
+        //clear imageView
+        [imageView setImage:nil];
+    }
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -73,8 +87,21 @@
     [self presentViewController:imagePicker animated:YES completion:nil];
 }
 
+- (IBAction)backgroundTapped:(id)sender {
+    [[self view] endEditing:YES];
+}
+
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
+    NSString *oldKey = [item imageKey];
+    
+    //did the old item already have an image?
+    if (oldKey) {
+        //delete old image
+        [[BNRImageStore sharedStore] deleteImageForKey:oldKey];
+    }
+    
+    
     //get picked image from info dictionary
     UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
     
@@ -84,11 +111,24 @@
     //create a string from unique identifier
     CFStringRef newUniqueIDString = CFUUIDCreateString(kCFAllocatorDefault, newUniqueID);
     
+    //use the unique ID to set our item's imageKey (toll-free bridge)
+    NSString *key = (__bridge NSString *)newUniqueIDString;
+    [item setImageKey:key];
+    
+    //store image in the BNRImageStore w/ this key
+    [[BNRImageStore sharedStore] setImage:image forKey:[item imageKey]];
+    
     //put that image onto the screen in our image view
     [imageView setImage:image];
     
     //take image picker off the screen -- you must call this dismiss method
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
 }
 
 @end
