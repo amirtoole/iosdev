@@ -47,7 +47,7 @@
     // Set it as *the* view of this view controller
     [self setView:v];
 
-    
+    //Creating a subview to attach our UISegmentedControl to
     UIScrollView *scroll = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, 435)];
     scroll.contentSize = CGSizeMake(320, 700);
     
@@ -55,10 +55,29 @@
     UISegmentedControl *segmentedControl = [[UISegmentedControl alloc] initWithItems:itemArray];
     segmentedControl.frame = CGRectMake(35, 10, 250, 50);
     segmentedControl.segmentedControlStyle = UISegmentedControlStylePlain;
-    segmentedControl.selectedSegmentIndex = 1;
+    
+    [segmentedControl addTarget:self action:@selector(valueChanged:) forControlEvents: UIControlEventValueChanged];
     
     [scroll addSubview:segmentedControl];
     [self.view addSubview:scroll];
-
 }
+
+- (void)valueChanged:(id)sender
+{
+    HypnosisView *view = (HypnosisView *)self.view;
+    switch (((UISegmentedControl *)sender).selectedSegmentIndex) {
+        case 0:
+            [view setBackgroundColor:[UIColor redColor]];
+            break;
+        case 1:
+            [view setBackgroundColor:[UIColor greenColor]];
+            break;
+        case 2:
+            [view setBackgroundColor:[UIColor blueColor]];
+            break;
+        default:
+            break;
+    }
+}
+
 @end
