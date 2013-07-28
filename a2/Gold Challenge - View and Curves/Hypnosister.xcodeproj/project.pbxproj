@@ -10,6 +10,7 @@
 		294AEEEC17A5772500408CDB /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 294AEEEA17A5772500408CDB /* Icon.png */; };
 		294AEEED17A5772500408CDB /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 294AEEEB17A5772500408CDB /* Icon@2x.png */; };
 		294BFDA717A5791F000C87F1 /* GoldChallengeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 294BFDA617A5791F000C87F1 /* GoldChallengeView.m */; };
+		294BFDA917A588A5000C87F1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 294BFDA817A588A5000C87F1 /* QuartzCore.framework */; };
 		BE894B7A13F44AF800169192 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE894B7913F44AF800169192 /* UIKit.framework */; };
 		BE894B7C13F44AF800169192 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE894B7B13F44AF800169192 /* Foundation.framework */; };
 		BE894B7E13F44AF800169192 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE894B7D13F44AF800169192 /* CoreGraphics.framework */; };
@@ -26,6 +27,7 @@
 		294AEEEB17A5772500408CDB /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../../../../../Downloads/iOS Programming 3e Solutions/00. Resources/Icon@2x.png"; sourceTree = "<group>"; };
 		294BFDA517A5791F000C87F1 /* GoldChallengeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoldChallengeView.h; sourceTree = "<group>"; };
 		294BFDA617A5791F000C87F1 /* GoldChallengeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoldChallengeView.m; sourceTree = "<group>"; };
+		294BFDA817A588A5000C87F1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		BE894B7513F44AF800169192 /* Hypnosister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hypnosister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE894B7913F44AF800169192 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BE894B7B13F44AF800169192 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -48,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				294BFDA917A588A5000C87F1 /* QuartzCore.framework in Frameworks */,
 				BE894B7E13F44AF800169192 /* CoreGraphics.framework in Frameworks */,
 				BE894B7A13F44AF800169192 /* UIKit.framework in Frameworks */,
 				BE894B7C13F44AF800169192 /* Foundation.framework in Frameworks */,
@@ -60,6 +63,7 @@
 		BE894B6A13F44AF800169192 = {
 			isa = PBXGroup;
 			children = (
+				294BFDA817A588A5000C87F1 /* QuartzCore.framework */,
 				BE894B7F13F44AF800169192 /* Hypnosister */,
 				BE894B7813F44AF800169192 /* Frameworks */,
 				BE894B7613F44AF800169192 /* Products */,

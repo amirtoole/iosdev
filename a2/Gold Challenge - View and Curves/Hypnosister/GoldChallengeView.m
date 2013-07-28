@@ -30,15 +30,28 @@
 
 - (void)drawRect:(CGRect)rect
 {
-    // Get the Layer of any view
-    CALayer * layer = [self layer];
+    CALayer *layer = [self layer];
     [layer setMasksToBounds:YES];
     [layer setCornerRadius:50];
     
-    // You can even add a border
+    //add border size
     [layer setBorderWidth:1.0];
-    [layer setBorderColor:[[UIColor blueColor] CGColor]];
+    //add border colour
+    [layer setBorderColor:[[UIColor blackColor] CGColor]];
+
+    //gradient
+//    CAGradientLayer * gradient = [CAGradientLayer layer];
+//    [gradient setFrame:[self bounds]];
+//    [gradient setColors:[NSArray arrayWithObjects:(id)[[UIColor blueColor] CGColor], (id)[[UIColor whiteColor] CGColor], nil]];
+
+//    [layer insertSublayer:gradient atIndex:1];
     
+    //shadow
+    [layer setShadowColor:[[UIColor blackColor] CGColor]];
+    [layer setShadowOffset:CGSizeMake(0, 6)];
+    [layer setShadowOpacity:1.0];
+    [layer setShadowRadius:10.0];
+
     [self.image drawInRect:rect];
 }
 
