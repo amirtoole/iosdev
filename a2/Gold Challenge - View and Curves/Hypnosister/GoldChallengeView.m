@@ -75,7 +75,6 @@
     UIGraphicsEndImageContext();
 
     [gradientImage drawInRect:rect];
-
 }
 
 
