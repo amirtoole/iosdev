@@ -50,7 +50,7 @@
                                                   title:[locationTitleField text]];
     // Add it to the map view 
     [worldView addAnnotation:mp];
-        
+
     // Zoom the region to this location
     MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(coord, 250, 250);
     [worldView setRegion:region animated:YES];
@@ -61,13 +61,28 @@
     [locationManager stopUpdatingLocation];
 }
 
+- (IBAction)segmentChanged:(id)sender {
+    switch (((UISegmentedControl *)sender).selectedSegmentIndex) {
+        case 0:
+            [worldView setMapType:MKMapTypeStandard];
+            break;
+        case 1:
+            [worldView setMapType:MKMapTypeSatellite];
+            break;
+        case 2:
+            [worldView setMapType:MKMapTypeHybrid];
+            break;
+        default:
+            break;
+    }
+}
+
 - (void)locationManager:(CLLocationManager *)manager
     didUpdateToLocation:(CLLocation *)newLocation
            fromLocation:(CLLocation *)oldLocation
 {
     // How many seconds ago was this new location created?
     NSTimeInterval t = [[newLocation timestamp] timeIntervalSinceNow];
-    
     // CLLocationManagers will return the last found location of the 
     // device first, you don't want that data in this case.
     // If this location was made more than 3 minutes ago, ignore it.

@@ -20,4 +20,6 @@
 }
 - (void)findLocation;
 - (void)foundLocation:(CLLocation *)loc;
+- (IBAction)segmentChanged:(id)sender;
+
 @end
