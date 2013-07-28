@@ -98,9 +98,12 @@
             withFont:font];
 
     CGRect imageRect;
-    imageRect.size = CGSizeMake(200,200);
+    imageRect.size = CGSizeMake(100,100);
+    
     GoldChallengeView *goldChallengeView = [[GoldChallengeView alloc] initWithFrame:imageRect];
+    
     [self addSubview:goldChallengeView];
+    
 
 }
 @end
