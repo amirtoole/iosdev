@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		989B883317A7284900011AB4 /* HomepwnerItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 989B883217A7284900011AB4 /* HomepwnerItemCell.m */; };
 		989B883517A7289200011AB4 /* HomepwnerItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989B883417A7289200011AB4 /* HomepwnerItemCell.xib */; };
+		989B883B17A74D1500011AB4 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 989B883917A74D1500011AB4 /* ImageViewController.m */; };
+		989B883C17A74D1500011AB4 /* ImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989B883A17A74D1500011AB4 /* ImageViewController.xib */; };
 		BE0B750314191AEE00118DD7 /* BNRImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0B750214191AEE00118DD7 /* BNRImageStore.m */; };
 		BE4E18E8140D9EB80007F01B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE4E18E7140D9EB80007F01B /* UIKit.framework */; };
 		BE4E18EA140D9EB80007F01B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE4E18E9140D9EB80007F01B /* Foundation.framework */; };
@@ -26,6 +28,9 @@
 		989B883117A7284900011AB4 /* HomepwnerItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomepwnerItemCell.h; sourceTree = "<group>"; };
 		989B883217A7284900011AB4 /* HomepwnerItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomepwnerItemCell.m; sourceTree = "<group>"; };
 		989B883417A7289200011AB4 /* HomepwnerItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomepwnerItemCell.xib; sourceTree = "<group>"; };
+		989B883817A74D1500011AB4 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		989B883917A74D1500011AB4 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		989B883A17A74D1500011AB4 /* ImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageViewController.xib; sourceTree = "<group>"; };
 		BE0B750114191AEE00118DD7 /* BNRImageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BNRImageStore.h; path = Homepwner/BNRImageStore.h; sourceTree = "<group>"; };
 		BE0B750214191AEE00118DD7 /* BNRImageStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BNRImageStore.m; path = Homepwner/BNRImageStore.m; sourceTree = "<group>"; };
 		BE4E18E3140D9EB80007F01B /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +70,9 @@
 			isa = PBXGroup;
 			children = (
 				BE0B750114191AEE00118DD7 /* BNRImageStore.h */,
+				989B883817A74D1500011AB4 /* ImageViewController.h */,
+				989B883917A74D1500011AB4 /* ImageViewController.m */,
+				989B883A17A74D1500011AB4 /* ImageViewController.xib */,
 				989B883117A7284900011AB4 /* HomepwnerItemCell.h */,
 				989B883217A7284900011AB4 /* HomepwnerItemCell.m */,
 				989B883417A7289200011AB4 /* HomepwnerItemCell.xib */,
@@ -175,6 +183,7 @@
 				BE4E18F0140D9EB80007F01B /* InfoPlist.strings in Resources */,
 				BE58F4A6141011C300C6D116 /* DetailViewController.xib in Resources */,
 				989B883517A7289200011AB4 /* HomepwnerItemCell.xib in Resources */,
+				989B883C17A74D1500011AB4 /* ImageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +202,7 @@
 				BE58F4A5141011C300C6D116 /* DetailViewController.m in Sources */,
 				BE0B750314191AEE00118DD7 /* BNRImageStore.m in Sources */,
 				989B883317A7284900011AB4 /* HomepwnerItemCell.m in Sources */,
+				989B883B17A74D1500011AB4 /* ImageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

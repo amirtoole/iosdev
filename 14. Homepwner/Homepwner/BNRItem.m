@@ -22,6 +22,8 @@
     [aCoder encodeObject:imageKey forKey:@"imageKey"];
     
     [aCoder encodeInt:valueInDollars forKey:@"valueInDollars"];
+    
+    [aCoder encodeObject:thumbnailData forKey:@"thumbnailData"];
 }
 - (id)initWithCoder:(NSCoder *)aDecoder
 {
@@ -34,6 +36,8 @@
         [self setValueInDollars:[aDecoder decodeIntForKey:@"valueInDollars"]];
 
         dateCreated = [aDecoder decodeObjectForKey:@"dateCreated"];
+        
+        thumbnailData = [aDecoder decodeObjectForKey:@"thumbnailData"];
     }
     return self;
 }

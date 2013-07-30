@@ -9,6 +9,8 @@
 #import "ItemsViewController.h"
 #import "BNRItemStore.h"
 #import "BNRItem.h"
+#import "ImageViewController.h"
+#import "BNRImageStore.h"
 
 @implementation ItemsViewController
 
@@ -148,6 +150,9 @@
     //get new or recycled cell
     HomepwnerItemCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomepwnerItemCell"];
     
+    [cell setController:self];
+    [cell setTableView:tableView];
+    
     //configure cell w/ the BNRItem
     [[cell nameLabel] setText:[p itemName]];
     [[cell serialNumberLabel] setText:[p serialNumber]];
@@ -156,4 +161,37 @@
     
     return cell;
 }
+
+- (void)showImage:(id)sender atIndexPath:(NSIndexPath *)ip
+{
+    NSLog(@"Going to show the image for %@", ip);
+    
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+        //get the item for the index path
+        BNRItem *i = [[[BNRItemStore defaultStore] allItems] objectAtIndex:[ip row]];
+        
+        NSString *imageKey = [i imageKey];
+        
+        //if there is no image, we don't need to display anything
+        UIImage *img = [[BNRImageStore defaultImageStore] imageForKey:imageKey];
+        if (!img)
+            return;
+        
+        //make rectangle that the frame of the button relative to our table view
+        CGRect rect = [[self view] convertRect:[sender bounds] fromView:sender];
+        
+        //create new imageviewcontroller and set its image
+        ImageViewController *ivc = [[ImageViewController alloc] init];
+        [ivc setImage:img];
+        
+        //present a 600x600 popover from the rect
+        imagePopover = [[UIPopoverController alloc] initWithContentViewController:ivc];
+        [imagePopover setDelegate:self];
+        [imagePopover setPopoverContentSize:CGSizeMake(600, 600)];
+        [imagePopover presentPopoverFromRect:rect inView:[self view]
+                    permittedArrowDirections:UIPopoverArrowDirectionAny
+                                    animated:YES];
+    }
+}
+
 @end
