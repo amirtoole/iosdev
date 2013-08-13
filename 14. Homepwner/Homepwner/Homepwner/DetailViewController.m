@@ -79,7 +79,8 @@
     [dateFormatter setTimeStyle:NSDateFormatterNoStyle];
 
     // Use filtered NSDate object to set dateLabel contents
-    [dateLabel setText:[dateFormatter stringFromDate:[item dateCreated]]];
+    NSDate *date = [NSDate dateWithTimeIntervalSinceReferenceDate:[item dateCreated]];
+    [dateLabel setText:[dateFormatter stringFromDate:date]];
 
     // Change the navigation item to display name of item
     [[self navigationItem] setTitle:[item itemName]];
