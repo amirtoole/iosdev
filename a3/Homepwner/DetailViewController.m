@@ -221,6 +221,13 @@
                                            animated:YES];
 }
 
+- (IBAction)clearPhoto:(id)sender
+{
+    [imageView setImage:nil];
+    [item setThumbnailDataFromImage:nil];
+    [item setImageKey:nil];
+}
+
 - (void)imagePickerController:(UIImagePickerController *)picker
 didFinishPickingMediaWithInfo:(NSDictionary *)info
 {

@@ -24,5 +24,6 @@
 - (IBAction)takePicture:(id)sender;
 - (IBAction)backgroundTapped:(id)sender;
 - (IBAction)showAssetTypePicker:(id)sender;
+- (IBAction)clearPhoto:(id)sender;
 
 @end

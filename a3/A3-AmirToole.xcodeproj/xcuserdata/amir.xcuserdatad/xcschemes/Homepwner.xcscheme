@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BE4E18E2140D9EB80007F01B"
-               BuildableName = "Homepwner.app"
+               BuildableName = "A3-AmirToole.app"
                BlueprintName = "A3-AmirToole"
                ReferencedContainer = "container:A3-AmirToole.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BE4E18E2140D9EB80007F01B"
-            BuildableName = "Homepwner.app"
+            BuildableName = "A3-AmirToole.app"
             BlueprintName = "A3-AmirToole"
             ReferencedContainer = "container:A3-AmirToole.xcodeproj">
          </BuildableReference>
@@ -52,7 +52,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BE4E18E2140D9EB80007F01B"
-            BuildableName = "Homepwner.app"
+            BuildableName = "A3-AmirToole.app"
             BlueprintName = "A3-AmirToole"
             ReferencedContainer = "container:A3-AmirToole.xcodeproj">
          </BuildableReference>
@@ -70,7 +70,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BE4E18E2140D9EB80007F01B"
-            BuildableName = "Homepwner.app"
+            BuildableName = "A3-AmirToole.app"
             BlueprintName = "A3-AmirToole"
             ReferencedContainer = "container:A3-AmirToole.xcodeproj">
          </BuildableReference>
