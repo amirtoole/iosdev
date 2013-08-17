@@ -11,6 +11,7 @@
 #import "BNRImageStore.h"
 #import "BNRItemStore.h"
 #import "AssetTypePicker.h"
+#import "OverlayView.h"
 
 
 @implementation DetailViewController
@@ -169,11 +170,16 @@
     if ([UIImagePickerController
             isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
         [imagePicker setSourceType:UIImagePickerControllerSourceTypeCamera];
+        OverlayView *overlay = [[OverlayView alloc] initWithFrame:CGRectMake(imagePicker.view.frame.origin.x,
+                                                                             imagePicker.view.frame.origin.y, imagePicker.view.frame.size.width, imagePicker.view.frame.size.height-self.tabBarController.tabBar.frame.size.height)];
+        [imagePicker setCameraOverlayView:overlay];
+
     } else {
         [imagePicker setSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
     }
     
     [imagePicker setDelegate:self];
+    
 
     // Place image picker on the screen
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
@@ -185,7 +191,7 @@
     
         // Display the popover controller, sender 
         // is the camera bar button item
-        [imagePickerPopover presentPopoverFromBarButtonItem:sender
+        [imagePickerPopover presentPopoverFromBarButtonItem:sender  
                                    permittedArrowDirections:UIPopoverArrowDirectionAny
                                                    animated:YES];
     } else {

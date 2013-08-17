@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2994C39417BF08F800AECF7E /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2994C39317BF08F800AECF7E /* OverlayView.m */; };
 		BE0B750314191AEE00118DD7 /* BNRImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0B750214191AEE00118DD7 /* BNRImageStore.m */; };
 		BE0E4E9D14323F6D00F05B13 /* HomepwnerItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0E4E9C14323F6D00F05B13 /* HomepwnerItemCell.m */; };
 		BE0E4EA014323FB200F05B13 /* HomepwnerItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE0E4E9F14323FB200F05B13 /* HomepwnerItemCell.xib */; };
@@ -30,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2994C39217BF08F800AECF7E /* OverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OverlayView.h; path = Homepwner/OverlayView.h; sourceTree = "<group>"; };
+		2994C39317BF08F800AECF7E /* OverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OverlayView.m; path = Homepwner/OverlayView.m; sourceTree = "<group>"; };
 		BE0B750114191AEE00118DD7 /* BNRImageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BNRImageStore.h; path = Homepwner/BNRImageStore.h; sourceTree = "<group>"; };
 		BE0B750214191AEE00118DD7 /* BNRImageStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BNRImageStore.m; path = Homepwner/BNRImageStore.m; sourceTree = "<group>"; };
 		BE0E4E9B14323F6D00F05B13 /* HomepwnerItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomepwnerItemCell.h; path = Homepwner/HomepwnerItemCell.h; sourceTree = "<group>"; };
@@ -84,6 +87,8 @@
 		BE4E18D8140D9EB80007F01B = {
 			isa = PBXGroup;
 			children = (
+				2994C39217BF08F800AECF7E /* OverlayView.h */,
+				2994C39317BF08F800AECF7E /* OverlayView.m */,
 				BE0E4EB41432631800F05B13 /* Homepwner.xcdatamodeld */,
 				BE0E4EB2143262F700F05B13 /* CoreData.framework */,
 				BE0E4EAF143262F300F05B13 /* CoreGraphics.framework */,
@@ -228,6 +233,7 @@
 				BE0E4EB61432631800F05B13 /* Homepwner.xcdatamodeld in Sources */,
 				BE0E4EB91432646C00F05B13 /* BNRItem.m in Sources */,
 				BE0E4EC414326B8700F05B13 /* AssetTypePicker.m in Sources */,
+				2994C39417BF08F800AECF7E /* OverlayView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
