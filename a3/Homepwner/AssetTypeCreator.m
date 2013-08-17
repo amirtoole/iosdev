@@ -7,6 +7,7 @@
 //
 
 #import "AssetTypeCreator.h"
+#import "BNRItemStore.h"
 
 @implementation AssetTypeCreator
 
@@ -35,6 +36,7 @@
 
 - (IBAction)save:(id)sender
 {
+    [[BNRItemStore sharedStore] addTypeWithLabel: [name text]];
     [[self presentingViewController] dismissViewControllerAnimated:YES completion:dismissBlock];
 }
 

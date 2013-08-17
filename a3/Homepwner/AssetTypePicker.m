@@ -90,12 +90,10 @@ didSelectRowAtIndexPath:(NSIndexPath *)ip
     AssetTypeCreator *creatorView = [[AssetTypeCreator alloc] init];
     
     [creatorView setDismissBlock:^{
-        [[BNRItemStore sharedStore] addTypeWithLabel: [[creatorView name] text]];
         [[self tableView] reloadData];
     }];
 
     
-//    NSManagedObject *newItem;
     UINavigationController *navController = [[UINavigationController alloc]
                                              initWithRootViewController: creatorView];
     
