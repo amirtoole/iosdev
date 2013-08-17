@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		295FC9C917BF11820045B3E1 /* AssetTypeCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 295FC9C717BF11820045B3E1 /* AssetTypeCreator.m */; };
+		295FC9CA17BF11820045B3E1 /* AssetTypeCreator.xib in Resources */ = {isa = PBXBuildFile; fileRef = 295FC9C817BF11820045B3E1 /* AssetTypeCreator.xib */; };
 		2994C39417BF08F800AECF7E /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2994C39317BF08F800AECF7E /* OverlayView.m */; };
 		BE0B750314191AEE00118DD7 /* BNRImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0B750214191AEE00118DD7 /* BNRImageStore.m */; };
 		BE0E4E9D14323F6D00F05B13 /* HomepwnerItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0E4E9C14323F6D00F05B13 /* HomepwnerItemCell.m */; };
@@ -31,6 +33,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		295FC9C617BF11820045B3E1 /* AssetTypeCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AssetTypeCreator.h; path = Homepwner/AssetTypeCreator.h; sourceTree = "<group>"; };
+		295FC9C717BF11820045B3E1 /* AssetTypeCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AssetTypeCreator.m; path = Homepwner/AssetTypeCreator.m; sourceTree = "<group>"; };
+		295FC9C817BF11820045B3E1 /* AssetTypeCreator.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AssetTypeCreator.xib; path = Homepwner/AssetTypeCreator.xib; sourceTree = "<group>"; };
 		2994C39217BF08F800AECF7E /* OverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OverlayView.h; path = Homepwner/OverlayView.h; sourceTree = "<group>"; };
 		2994C39317BF08F800AECF7E /* OverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OverlayView.m; path = Homepwner/OverlayView.m; sourceTree = "<group>"; };
 		BE0B750114191AEE00118DD7 /* BNRImageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BNRImageStore.h; path = Homepwner/BNRImageStore.h; sourceTree = "<group>"; };
@@ -111,6 +116,9 @@
 				BE4E1903140DA6EC0007F01B /* BNRItemStore.m */,
 				BE0E4EC214326B8700F05B13 /* AssetTypePicker.h */,
 				BE0E4EC314326B8700F05B13 /* AssetTypePicker.m */,
+				295FC9C617BF11820045B3E1 /* AssetTypeCreator.h */,
+				295FC9C717BF11820045B3E1 /* AssetTypeCreator.m */,
+				295FC9C817BF11820045B3E1 /* AssetTypeCreator.xib */,
 				BE4E18EB140D9EB80007F01B /* Homepwner */,
 				BE4E18E6140D9EB80007F01B /* Frameworks */,
 				BE4E18E4140D9EB80007F01B /* Products */,
@@ -212,6 +220,7 @@
 				BE0E4EA014323FB200F05B13 /* HomepwnerItemCell.xib in Resources */,
 				BE0E4EAA143246BC00F05B13 /* ImageViewController.xib in Resources */,
 				BE9E400C1432C55E00EE58E5 /* Localizable.strings in Resources */,
+				295FC9CA17BF11820045B3E1 /* AssetTypeCreator.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +243,7 @@
 				BE0E4EB91432646C00F05B13 /* BNRItem.m in Sources */,
 				BE0E4EC414326B8700F05B13 /* AssetTypePicker.m in Sources */,
 				2994C39417BF08F800AECF7E /* OverlayView.m in Sources */,
+				295FC9C917BF11820045B3E1 /* AssetTypeCreator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

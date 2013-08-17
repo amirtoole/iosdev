@@ -39,4 +39,6 @@
 
 - (void)loadAllItems;
 
+- (void)addTypeWithLabel:(NSString*)label; 
+
 @end

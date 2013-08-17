@@ -226,4 +226,16 @@
     return allAssetTypes;
 }
 
+- (void)addTypeWithLabel:(NSString*)label
+{
+    if (!allAssetTypes)
+        [self allAssetTypes];
+    NSManagedObject *type;
+    
+    type = [NSEntityDescription insertNewObjectForEntityForName:@"BNRAssetType"
+                                         inManagedObjectContext:context];
+    [type setValue:label forKey:@"label"];
+    [allAssetTypes addObject:type];
+}
+
 @end

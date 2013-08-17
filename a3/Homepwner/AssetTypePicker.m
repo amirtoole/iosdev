@@ -9,15 +9,30 @@
 #import "AssetTypePicker.h"
 #import "BNRItemStore.h"
 #import "BNRItem.h"
+#import "AssetTypeCreator.h"
 
 @implementation AssetTypePicker
 @synthesize item;
 
 - (id)init
 {
-    return [super initWithStyle:UITableViewStyleGrouped];
+    
+    self = [super initWithStyle:UITableViewStyleGrouped];
+    if (self) {
+        // Create a new bar button item that will send
+        // addNewItem: to ItemsViewController
+        UIBarButtonItem *bbi = [[UIBarButtonItem alloc]
+                                initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
+                                target:self
+                                action:@selector(addNewItem:)];
+        
+        // Set this bar button item as the right item in the navigationItem
+        [[self navigationItem] setRightBarButtonItem:bbi];
+    }
+    
+    return self;
 }
-- (id)initWithStyle:(UITableViewStyle)style 
+- (id)initWithStyle:(UITableViewStyle)style
 {
     return [self init];
 }
@@ -69,4 +84,28 @@ didSelectRowAtIndexPath:(NSIndexPath *)ip
     
     [[self navigationController] popViewControllerAnimated:YES];
 }
+
+- (IBAction)addNewItem:(id)sender
+{
+    AssetTypeCreator *creatorView = [[AssetTypeCreator alloc] init];
+    
+    [creatorView setDismissBlock:^{
+        [[BNRItemStore sharedStore] addTypeWithLabel: [[creatorView name] text]];
+        [[self tableView] reloadData];
+    }];
+
+    
+//    NSManagedObject *newItem;
+    UINavigationController *navController = [[UINavigationController alloc]
+                                             initWithRootViewController: creatorView];
+    
+    [navController setModalPresentationStyle:UIModalPresentationFormSheet];
+    [navController setModalTransitionStyle:UIModalTransitionStyleFlipHorizontal];
+    
+    [self presentViewController:navController animated:YES completion:nil];
+    
+    
+    
+}  
+
 @end
