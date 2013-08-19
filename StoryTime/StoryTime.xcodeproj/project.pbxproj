@@ -17,6 +17,7 @@
 		98DD6E4117C2D8F0007900CB /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98DD6E4017C2D8F0007900CB /* Default@2x.png */; };
 		98DD6E4317C2D8F0007900CB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98DD6E4217C2D8F0007900CB /* Default-568h@2x.png */; };
 		98DD6E4A17C2D97D007900CB /* Storytime.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98DD6E4917C2D97D007900CB /* Storytime.storyboard */; };
+		98DD6E4D17C2E071007900CB /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98DD6E4C17C2E071007900CB /* ModalViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		98DD6E4017C2D8F0007900CB /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		98DD6E4217C2D8F0007900CB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		98DD6E4917C2D97D007900CB /* Storytime.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storytime.storyboard; sourceTree = "<group>"; };
+		98DD6E4B17C2E071007900CB /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ModalViewController.h; path = StoryTime/ModalViewController.h; sourceTree = "<group>"; };
+		98DD6E4C17C2E071007900CB /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ModalViewController.m; path = StoryTime/ModalViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				98DD6E4917C2D97D007900CB /* Storytime.storyboard */,
+				98DD6E4B17C2E071007900CB /* ModalViewController.h */,
+				98DD6E4C17C2E071007900CB /* ModalViewController.m */,
 				98DD6E3217C2D8F0007900CB /* StoryTime */,
 				98DD6E2B17C2D8F0007900CB /* Frameworks */,
 				98DD6E2A17C2D8F0007900CB /* Products */,
@@ -171,6 +176,7 @@
 			files = (
 				98DD6E3917C2D8F0007900CB /* main.m in Sources */,
 				98DD6E3D17C2D8F0007900CB /* BNRAppDelegate.m in Sources */,
+				98DD6E4D17C2E071007900CB /* ModalViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
